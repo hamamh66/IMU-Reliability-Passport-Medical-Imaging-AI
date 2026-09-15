@@ -1,0 +1,21 @@
+{
+  "source_files": 25553,
+  "unique_sha256": 19962,
+  "exact_conflict_identities": 5588,
+  "exact_conflict_files": 11176,
+  "near_conflict_groups": 32,
+  "near_conflict_images": 93,
+  "final_clean_images": 14281,
+  "root_manifest_hash": "6efc094cba4023132862179545ec926185088a317820e376605839d587d9997a",
+  "class_counts": {
+    "Tuberculosis": 6574,
+    "Pneumonia": 4245,
+    "Normal": 3462
+  },
+  "split_counts": {
+    "train": 10000,
+    "validation": 1435,
+    "test": 1428,
+    "calibration": 1418
+  }
+}

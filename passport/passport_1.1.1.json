@@ -1,0 +1,444 @@
+{
+  "schema_version": "1.1.1",
+  "passport_id": "IMU-CXR-PASSPORT-2026-001",
+  "created_at": "2026-09-14T22:15:46.266081+00:00",
+  "dataset_identity": {
+    "name": "Three-class public CXR compilation",
+    "version": null,
+    "access_date": "2026-09-14",
+    "root_manifest_hash": "6efc094cba4023132862179545ec926185088a317820e376605839d587d9997a",
+    "file_count": 25553,
+    "license": null
+  },
+  "execution_identity": {
+    "software_version": "0.2.0",
+    "configuration_hash": "9ff987e49f22973c1da04f93b40370affa7140bc8a204d803816d0828a67c99e",
+    "environment_fingerprint": "9799147094313cf2290c73fe8f1f300a611e03ae5acffb7efe007b38fc7a2246"
+  },
+  "modules": {
+    "image_identity": {
+      "source_files": 25553,
+      "unique_sha256": 19962,
+      "exact_conflict_identities": 5588,
+      "exact_conflict_files": 11176,
+      "near_conflict_groups": 32,
+      "near_conflict_images": 93,
+      "final_clean_images": 14281,
+      "root_manifest_hash": "6efc094cba4023132862179545ec926185088a317820e376605839d587d9997a",
+      "class_counts": {
+        "Tuberculosis": 6574,
+        "Pneumonia": 4245,
+        "Normal": 3462
+      },
+      "split_counts": {
+        "train": 10000,
+        "validation": 1435,
+        "test": 1428,
+        "calibration": 1418
+      }
+    },
+    "label_integrity": {
+      "exact_conflict_files": 11176,
+      "near_conflict_images": 93
+    },
+    "provenance": {
+      "status": "partial",
+      "missing": [
+        "patient_id",
+        "study_id",
+        "institution",
+        "device",
+        "projection"
+      ]
+    },
+    "partition_integrity": {
+      "detected_cross_partition_groups": 0,
+      "patient_level": "not_evaluated"
+    },
+    "shortcut_controls": {
+      "accuracy": 0.988795518207283,
+      "balanced_accuracy": 0.9913930221833206,
+      "macro_f1": 0.9881167416101704
+    },
+    "reliability_evidence": {
+      "status": "completed",
+      "selected_model": "Logistic_C10.0",
+      "temperatures": {
+        "direct": 3.0212914925527183,
+        "abnormal": 1.721585132051254,
+        "disease": 1.172217802748312
+      },
+      "test_metrics": {
+        "direct": {
+          "accuracy": 0.9803921568627451,
+          "balanced_accuracy": 0.9779033196986547,
+          "macro_f1": 0.9789845706452432,
+          "macro_auc_ovr": 0.9992276418528894,
+          "ece": 0.006592622106412095,
+          "brier": 0.027103184858855944,
+          "nll": 0.04674443338286304
+        },
+        "hierarchical": {
+          "accuracy": 0.9831932773109243,
+          "balanced_accuracy": 0.9813654242530205,
+          "macro_f1": 0.9822363648323845,
+          "macro_auc_ovr": 0.9989749935870004,
+          "ece": 0.007210988288800982,
+          "brier": 0.027202526115516896,
+          "nll": 0.04934446105262294
+        }
+      },
+      "conformal": {
+        "marginal_coverage": 0.9103641456582633,
+        "mean_set_size": 0.915266106442577,
+        "singleton_rate": 0.915266106442577,
+        "empty_sets": 121,
+        "Normal_coverage": 0.9023668639053254,
+        "Pneumonia_coverage": 0.9018691588785047,
+        "Tuberculosis_coverage": 0.9199395770392749
+      },
+      "selective": {
+        "coverage": 0.7394957983193278,
+        "accepted_accuracy": 1.0,
+        "selective_risk": 0.0,
+        "referred_n": 372,
+        "accepted_n": 1056,
+        "selective_risk_rule_of_three_upper": 0.002840909090909091
+      },
+      "metadata_shortcut": {
+        "accuracy": 0.988795518207283,
+        "balanced_accuracy": 0.9913930221833206,
+        "macro_f1": 0.9881167416101704
+      },
+      "finetuned": {
+        "epochs_trained": 17,
+        "best_epoch": 12,
+        "temperature": 1.1079166454969491,
+        "test_metrics": {
+          "accuracy": 0.9936974789915967,
+          "balanced_accuracy": 0.9942276491765979,
+          "macro_f1": 0.9930468805249916,
+          "macro_auc_ovr": 0.99996435997775,
+          "ece": 0.005258582887195374,
+          "brier": 0.010348617294685317,
+          "nll": 0.016279563393334126
+        },
+        "bootstrap_95ci": {
+          "accuracy": [
+            0.9894957983193278,
+            0.9971988795518207
+          ],
+          "balanced_accuracy": [
+            0.9898543234734053,
+            0.9977106097824961
+          ],
+          "macro_f1": [
+            0.9880663688215887,
+            0.9970205640668109
+          ],
+          "macro_auc_ovr": [
+            0.9999008495047265,
+            0.9999981966565599
+          ],
+          "ece": [
+            0.002296203889307573,
+            0.009434332886413398
+          ],
+          "brier": [
+            0.004501600294302111,
+            0.017756696254740672
+          ],
+          "nll": [
+            0.00689442067436346,
+            0.02797858599326064
+          ]
+        },
+        "paired_contrast_vs_direct": {
+          "metric": "macro_f1",
+          "mean_finetuned_minus_direct": 0.014194019330247777,
+          "ci_low": 0.005937302918786297,
+          "ci_high": 0.02273994470695697
+        },
+        "conformal": {
+          "marginal_coverage": 0.8921568627450981,
+          "mean_set_size": 0.8921568627450981,
+          "singleton_rate": 0.8921568627450981,
+          "empty_sets": 154,
+          "Normal_coverage": 0.8579881656804734,
+          "Pneumonia_coverage": 0.9135514018691588,
+          "Tuberculosis_coverage": 0.8957703927492447,
+          "q": {
+            "Normal": 6.67572021484375e-06,
+            "Pneumonia": 5.960464477539062e-07,
+            "Tuberculosis": 1.0848045349121094e-05
+          }
+        },
+        "hyperparameters": {
+          "lr": 0.0001,
+          "weight_decay": 0.01,
+          "batch_size": 64,
+          "max_epochs": 20,
+          "patience": 5,
+          "crop_scale": [
+            0.9,
+            1.0
+          ],
+          "hflip": true
+        }
+      }
+    }
+  },
+  "claim_gates": [
+    {
+      "claim_id": "C1",
+      "claim": "Controlled faults are detected at prespecified performance thresholds",
+      "state": "blocked",
+      "rule_id": "R-FAULT-001",
+      "evidence": {
+        "min_stratum_recall": 0.08888888888888889,
+        "min_stratum": "source_border",
+        "pooled_recall_design_weighted": 0.8987654320987655,
+        "design_based_se": 0.0033330792973360634,
+        "max_fpr": 0.0,
+        "two_stage_detector": {
+          "status": "completed",
+          "tau": 0.8,
+          "min_stratum_recall": 0.9777777777777777,
+          "fpr": 0.0,
+          "passes_stratum_rule": true
+        }
+      },
+      "rationale": "Stratum source_border recall 0.089 is below the 0.95 floor.",
+      "depends_on": [],
+      "threshold_provenance": {
+        "config_key": "fault_min_recall",
+        "value": 0.95,
+        "rationale": "applied to the minimum recall over injected transformation strata (stratum-minimum rule)",
+        "override": null
+      },
+      "effective_state": "blocked",
+      "model_scope": null
+    },
+    {
+      "claim_id": "C2",
+      "claim": "The reconstructed CXR test split is independent at detected file/image-identity levels",
+      "state": "supported_in_evaluated_setting",
+      "rule_id": "R-LEAK-001",
+      "evidence": {
+        "asserted_cross_partition_groups": 0
+      },
+      "rationale": "No exact or declared perceptual group crosses the reconstructed partitions. Prerequisite C1 not supported; effective state downgraded to conditional.",
+      "depends_on": [
+        "C1"
+      ],
+      "threshold_provenance": {
+        "config_key": null,
+        "value": null,
+        "rationale": "rule fires on any asserted identity group crossing partitions; no numeric threshold",
+        "override": null
+      },
+      "effective_state": "conditional",
+      "model_scope": null
+    },
+    {
+      "claim_id": "C3",
+      "claim": "The CXR evaluation is patient- and institution-independent",
+      "state": "not_evaluated",
+      "rule_id": "R-PROV-001",
+      "evidence": null,
+      "rationale": "Patient and institution identifiers are unavailable.",
+      "depends_on": [],
+      "threshold_provenance": {
+        "config_key": null,
+        "value": null,
+        "rationale": "requires patient and institution identifiers; no numeric threshold",
+        "override": null
+      },
+      "effective_state": "not_evaluated",
+      "model_scope": null
+    },
+    {
+      "claim_id": "C4",
+      "claim": "Internal CXR image performance supports clinical generalization",
+      "state": "blocked",
+      "rule_id": "R-SHORTCUT-001",
+      "evidence": {
+        "image_macro_f1": 0.9789845706452432,
+        "finetuned_macro_f1": 0.9930468805249916,
+        "best_image_macro_f1": 0.9930468805249916,
+        "metadata_macro_f1": 0.9881167416101704,
+        "gap": 0.004930138914821192
+      },
+      "rationale": "Metadata-only performance approaches image-model performance.",
+      "depends_on": [
+        "C2"
+      ],
+      "threshold_provenance": {
+        "config_key": "shortcut_gap_tolerance",
+        "value": 0.05,
+        "rationale": "software-governance default",
+        "override": null
+      },
+      "effective_state": "blocked",
+      "model_scope": {
+        "model": "best image model: fine-tuned mobilenetv3_small_100, all layers trainable",
+        "determined_by": {
+          "software_version": "0.2.0",
+          "configuration_hash": "9ff987e49f22973c1da04f93b40370affa7140bc8a204d803816d0828a67c99e",
+          "seed": 20260816,
+          "encoder": "mobilenetv3_small_100",
+          "note": "Frozen-feature models are deterministic given the configuration hash and seed.",
+          "hyperparameters": {
+            "lr": 0.0001,
+            "weight_decay": 0.01,
+            "batch_size": 64,
+            "max_epochs": 20,
+            "patience": 5,
+            "crop_scale": [
+              0.9,
+              1.0
+            ],
+            "hflip": true
+          },
+          "epochs_trained": 17,
+          "best_epoch": 12,
+          "temperature": 1.1079166454969491,
+          "checkpoint": "Models/finetuned_best.pt"
+        },
+        "prediction_digest": null,
+        "compared_against": "direct (Logistic_C10.0 on frozen mobilenetv3_small_100 features)"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "claim": "Conformal marginal coverage meets the internal tolerance (hierarchical model)",
+      "state": "supported_in_evaluated_setting",
+      "rule_id": "R-CONFORMAL-001",
+      "evidence": {
+        "observed": 0.9103641456582633,
+        "target": 0.9,
+        "tolerance": 0.02
+      },
+      "rationale": "Coverage is evaluated only within the reconstructed CXR setting, and only for the hierarchical model, on which the conformal sets and the selective policy were built.",
+      "depends_on": [
+        "C2",
+        "C4"
+      ],
+      "threshold_provenance": {
+        "config_key": "conformal_tolerance",
+        "value": 0.02,
+        "rationale": "software-governance default",
+        "override": null
+      },
+      "effective_state": "conditional",
+      "model_scope": {
+        "model": "hierarchical (temperature-scaled normal-vs-abnormal and pneumonia-vs-tuberculosis logistic regressions on frozen mobilenetv3_small_100 features)",
+        "determined_by": {
+          "software_version": "0.2.0",
+          "configuration_hash": "9ff987e49f22973c1da04f93b40370affa7140bc8a204d803816d0828a67c99e",
+          "seed": 20260816,
+          "encoder": "mobilenetv3_small_100",
+          "note": "Frozen-feature models are deterministic given the configuration hash and seed.",
+          "temperatures": {
+            "direct": 3.0212914925527183,
+            "abnormal": 1.721585132051254,
+            "disease": 1.172217802748312
+          }
+        },
+        "prediction_digest": null
+      }
+    },
+    {
+      "claim_id": "C5b",
+      "claim": "Conformal marginal coverage meets the internal tolerance (fine-tuned model)",
+      "state": "supported_in_evaluated_setting",
+      "rule_id": "R-CONFORMAL-001",
+      "evidence": {
+        "observed": 0.8921568627450981,
+        "target": 0.9,
+        "tolerance": 0.02,
+        "empty_sets": 154
+      },
+      "rationale": "Coverage of the fine-tuned model, recorded separately from C5 so that no gate mixes model scopes. The selective policy was not refitted for this model.",
+      "depends_on": [
+        "C2",
+        "C4"
+      ],
+      "threshold_provenance": {
+        "config_key": "conformal_tolerance",
+        "value": 0.02,
+        "rationale": "software-governance default",
+        "override": null
+      },
+      "model_scope": {
+        "model": "fine-tuned mobilenetv3_small_100, all layers trainable",
+        "determined_by": {
+          "software_version": "0.2.0",
+          "configuration_hash": "9ff987e49f22973c1da04f93b40370affa7140bc8a204d803816d0828a67c99e",
+          "seed": 20260816,
+          "encoder": "mobilenetv3_small_100",
+          "note": "Frozen-feature models are deterministic given the configuration hash and seed.",
+          "hyperparameters": {
+            "lr": 0.0001,
+            "weight_decay": 0.01,
+            "batch_size": 64,
+            "max_epochs": 20,
+            "patience": 5,
+            "crop_scale": [
+              0.9,
+              1.0
+            ],
+            "hflip": true
+          },
+          "epochs_trained": 17,
+          "best_epoch": 12,
+          "temperature": 1.1079166454969491,
+          "checkpoint": "Models/finetuned_best.pt"
+        },
+        "prediction_digest": null
+      },
+      "effective_state": "conditional"
+    },
+    {
+      "claim_id": "C6",
+      "claim": "The core passport engine transfers to a different imaging modality",
+      "state": "supported_in_evaluated_setting",
+      "rule_id": "R-PORT-001",
+      "evidence": {
+        "dataset": "PathMNIST",
+        "modules_completed": 7,
+        "total_modules": 8
+      },
+      "rationale": "Core audits ran without modification; patient identity and model reliability remain unavailable.",
+      "depends_on": [],
+      "threshold_provenance": {
+        "config_key": null,
+        "value": null,
+        "rationale": "supported when at least six of eight modules complete without core-code change",
+        "override": null
+      },
+      "effective_state": "supported_in_evaluated_setting",
+      "model_scope": null
+    },
+    {
+      "claim_id": "C7",
+      "claim": "Exact outputs reproduce across independent software environments",
+      "state": "not_evaluated",
+      "rule_id": "R-REPRO-002",
+      "evidence": {
+        "cross_environment_status": "not_evaluated",
+        "exact_agreement": null
+      },
+      "rationale": "Copy this output folder to a second Colab/runtime and rerun to enable comparison.",
+      "depends_on": [],
+      "threshold_provenance": {
+        "config_key": null,
+        "value": null,
+        "rationale": "requires exact-output agreement of 1.0 across environments",
+        "override": null
+      },
+      "effective_state": "not_evaluated",
+      "model_scope": null
+    }
+  ]
+}

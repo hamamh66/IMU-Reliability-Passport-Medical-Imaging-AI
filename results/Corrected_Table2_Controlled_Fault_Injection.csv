@@ -1,0 +1,7 @@
+fault_type,transformation,injected_n,precision,recall,f1,false_positive_rate,tp,fp,fn,tn
+Exact duplicate,Byte-identical copies,270,1.0,1.0,1.0,0.0,270,0,0,2160
+Pixel identity,Lossless re-encoding plus exact copies,360,1.0,1.0,1.0,0.0,360,0,0,2070
+Near duplicate,All same-base derived pairs; pHash radius 4,810,1.0,0.8987654320987655,0.9466840052015605,0.0,728,0,82,1620
+Label conflict,Matched identity with altered label,90,1.0,1.0,1.0,0.0,90,0,0,2340
+Split leakage,Matched identity across partitions,90,1.0,1.0,1.0,0.0,90,0,0,2340
+Metadata fault,Missing or invalid declared metadata,90,1.0,1.0,1.0,0.0,90,0,0,90

@@ -1,0 +1,76 @@
+{
+  "epochs_trained": 17,
+  "best_epoch": 12,
+  "temperature": 1.1079166454969491,
+  "test_metrics": {
+    "accuracy": 0.9936974789915967,
+    "balanced_accuracy": 0.9942276491765979,
+    "macro_f1": 0.9930468805249916,
+    "macro_auc_ovr": 0.99996435997775,
+    "ece": 0.005258582887195374,
+    "brier": 0.010348617294685317,
+    "nll": 0.016279563393334126
+  },
+  "bootstrap_95ci": {
+    "accuracy": [
+      0.9894957983193278,
+      0.9971988795518207
+    ],
+    "balanced_accuracy": [
+      0.9898543234734053,
+      0.9977106097824961
+    ],
+    "macro_f1": [
+      0.9880663688215887,
+      0.9970205640668109
+    ],
+    "macro_auc_ovr": [
+      0.9999008495047265,
+      0.9999981966565599
+    ],
+    "ece": [
+      0.002296203889307573,
+      0.009434332886413398
+    ],
+    "brier": [
+      0.004501600294302111,
+      0.017756696254740672
+    ],
+    "nll": [
+      0.00689442067436346,
+      0.02797858599326064
+    ]
+  },
+  "paired_contrast_vs_direct": {
+    "metric": "macro_f1",
+    "mean_finetuned_minus_direct": 0.014194019330247777,
+    "ci_low": 0.005937302918786297,
+    "ci_high": 0.02273994470695697
+  },
+  "conformal": {
+    "marginal_coverage": 0.8921568627450981,
+    "mean_set_size": 0.8921568627450981,
+    "singleton_rate": 0.8921568627450981,
+    "empty_sets": 154,
+    "Normal_coverage": 0.8579881656804734,
+    "Pneumonia_coverage": 0.9135514018691588,
+    "Tuberculosis_coverage": 0.8957703927492447,
+    "q": {
+      "Normal": 6.67572021484375e-06,
+      "Pneumonia": 5.960464477539062e-07,
+      "Tuberculosis": 1.0848045349121094e-05
+    }
+  },
+  "hyperparameters": {
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "batch_size": 64,
+    "max_epochs": 20,
+    "patience": 5,
+    "crop_scale": [
+      0.9,
+      1.0
+    ],
+    "hflip": true
+  }
+}

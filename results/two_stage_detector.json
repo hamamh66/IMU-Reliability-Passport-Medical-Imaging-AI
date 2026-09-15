@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "tau": 0.8,
+  "candidate_radius": 8,
+  "pooled_recall": 0.9975308641975309,
+  "min_stratum_recall": 0.9777777777777777,
+  "false_positive_count": 0,
+  "n_controls": 1620,
+  "fpr": 0.0,
+  "direct_pairwise_recall": 0.9975308641975309,
+  "passes_stratum_rule": true
+}

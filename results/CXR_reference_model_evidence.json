@@ -1,0 +1,51 @@
+{
+  "status": "completed",
+  "selected_model": "Logistic_C10.0",
+  "temperatures": {
+    "direct": 3.0212914925527183,
+    "abnormal": 1.721585132051254,
+    "disease": 1.172217802748312
+  },
+  "test_metrics": {
+    "direct": {
+      "accuracy": 0.9803921568627451,
+      "balanced_accuracy": 0.9779033196986547,
+      "macro_f1": 0.9789845706452432,
+      "macro_auc_ovr": 0.9992276418528894,
+      "ece": 0.006592622106412095,
+      "brier": 0.027103184858855944,
+      "nll": 0.04674443338286304
+    },
+    "hierarchical": {
+      "accuracy": 0.9831932773109243,
+      "balanced_accuracy": 0.9813654242530205,
+      "macro_f1": 0.9822363648323845,
+      "macro_auc_ovr": 0.9989749935870004,
+      "ece": 0.007210988288800982,
+      "brier": 0.027202526115516896,
+      "nll": 0.04934446105262294
+    }
+  },
+  "conformal": {
+    "marginal_coverage": 0.9103641456582633,
+    "mean_set_size": 0.915266106442577,
+    "singleton_rate": 0.915266106442577,
+    "empty_sets": 121,
+    "Normal_coverage": 0.9023668639053254,
+    "Pneumonia_coverage": 0.9018691588785047,
+    "Tuberculosis_coverage": 0.9199395770392749
+  },
+  "selective": {
+    "coverage": 0.7394957983193278,
+    "accepted_accuracy": 1.0,
+    "selective_risk": 0.0,
+    "referred_n": 372,
+    "accepted_n": 1056,
+    "selective_risk_rule_of_three_upper": 0.002840909090909091
+  },
+  "metadata_shortcut": {
+    "accuracy": 0.988795518207283,
+    "balanced_accuracy": 0.9913930221833206,
+    "macro_f1": 0.9881167416101704
+  }
+}

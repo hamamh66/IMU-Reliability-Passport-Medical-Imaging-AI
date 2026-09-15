@@ -1,0 +1,10 @@
+fault_type,same_component_recall,direct_pairwise_recall,transitive_fraction
+exact_duplicate,1.0,1.0,0.0
+label_conflict,1.0,1.0,0.0
+metadata_fault,1.0,1.0,0.0
+near_compression,1.0,1.0,0.0
+near_contrast,1.0,1.0,0.0
+near_resize,1.0,1.0,0.0
+pixel_reencode,1.0,1.0,0.0
+source_border,0.08888888888888889,0.07777777777777778,0.125
+split_leakage,1.0,1.0,0.0

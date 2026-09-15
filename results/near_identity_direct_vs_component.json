@@ -1,0 +1,6 @@
+{
+  "same_component_recall": 0.8987654320987655,
+  "direct_pairwise_recall": 0.8975308641975308,
+  "transitive_fraction": 0.0013736263736263737,
+  "unrelated_direct_positives": 0
+}

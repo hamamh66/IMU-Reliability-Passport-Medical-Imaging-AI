@@ -1,0 +1,9 @@
+dataset,module,status,core_code_changed,configuration_only
+PathMNIST,Dataset identity,completed,False,True
+PathMNIST,Image/subject identity,completed_partial_no_subject_ids,False,True
+PathMNIST,Label integrity,completed,False,True
+PathMNIST,Provenance,completed_partial,False,True
+PathMNIST,Partition integrity,completed,False,True
+PathMNIST,Shortcut controls,completed,False,True
+PathMNIST,Reliability evidence,not_evaluated_no_image_model,False,True
+PathMNIST,Claim gate,completed,False,True

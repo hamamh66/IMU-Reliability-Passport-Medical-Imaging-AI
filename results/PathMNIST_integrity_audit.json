@@ -1,0 +1,14 @@
+{
+  "dataset": "PathMNIST",
+  "modality": "Colorectal histopathology",
+  "file_format": "PNG",
+  "label_classes": 9,
+  "provenance_availability": "split and class; no patient/study/device identifiers",
+  "files": 8991,
+  "unique_sha256": 8991,
+  "exact_conflict_groups": 0,
+  "phash_conflict_groups": 0,
+  "exact_split_leakage_groups": 0,
+  "phash_split_leakage_groups": 1,
+  "root_manifest_hash": "b808ff506c929dd8f7d39ddf9a3ae4d5e77735ed7fe00b4a96946494f3a6139a"
+}

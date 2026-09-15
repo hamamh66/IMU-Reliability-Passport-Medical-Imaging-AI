@@ -1,0 +1,23 @@
+# Python 3.11+ recommended.
+# Pins reflect the environment that produced the reported results
+# (software version 0.2 / 0.3). See results/environment.json for the
+# exact versions recorded at run time.
+
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11
+scikit-learn>=1.5
+matplotlib>=3.8
+seaborn>=0.13.2
+pillow>=10.0
+
+torch>=2.3
+torchvision>=0.18
+timm>=1.0.19
+
+ImageHash>=4.3.2
+medmnist>=3.0.2
+kagglehub>=0.3.12
+jsonschema>=4.23
+psutil>=5.9
+tqdm>=4.66
